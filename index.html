@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
 
     <link
       rel="stylesheet"
@@ -29,10 +29,11 @@
         <!--Navigatoin on site-->
         <nav class="site-nav">
           <!--Logo-->
-          <a href="./index.html" class="logo logo-style"
+          <a href="./index.html" class="logo header-logo"
             >Web<span class="logo-studio">Studio</span></a
           >
 
+          <!--Navigation-->
           <ul class="menu-nav">
             <li>
               <a href="./index.html" class="nav-element current">Studio</a>
@@ -46,22 +47,28 @@
         <address class="contacts">
           <ul class="contact-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact"
+              <a href="mailto:info@devstudio.com" class="contact-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="contact"
+              <a href="tel:+110001111111" class="contact-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="burger-button" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger" />
+          </svg>
+        </button>
       </div>
     </header>
 
     <!--MAIN CONTENT-->
-    <main>
+    <main class="hidden">
       <!--Section 1-->
       <section class="section-one">
         <div class="container">
@@ -78,7 +85,7 @@
             <li class="feature-list-element">
               <div class="feature-container">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
+                  <use href="./images/icons.svg#icon-antenna" />
                 </svg>
               </div>
               <h3 class="title-feature">Strategy</h3>
@@ -91,7 +98,7 @@
             <li class="feature-list-element">
               <div class="feature-container">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
+                  <use href="./images/icons.svg#icon-clock" />
                 </svg>
               </div>
               <h3 class="title-feature">Punctuality</h3>
@@ -451,7 +458,7 @@
 
     <!--FOOTER-->
 
-    <footer class="footer-style">
+    <footer class="footer-style hidden">
       <div class="container">
         <div class="first-footer-container">
           <!--Logo-->
@@ -527,7 +534,7 @@
     </footer>
 
     <!--Modal dialog window-->
-    <div class="modal-window-container">
+    <div class="modal-window-container hidden">
       <div class="modal-window">
         <button type="button" class="modal-window-button">
           <svg width="8" height="8" class="modal-close-icon">

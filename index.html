@@ -142,17 +142,19 @@
     </header>
 
     <!--MAIN CONTENT-->
-    <main class="hidden">
+    <main>
       <!--Section 1-->
       <section class="section-one">
         <div class="container">
           <h1 class="name-page">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-order">Order Service</button>
+          <button type="button" class="button-order" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
       <!--Section 2-->
-      <section class="section-two">
+      <section class="section-two hidden" class="hidden">
         <div class="container">
           <h2 class="visually-hidden">.</h2>
           <ul class="feature-list">
@@ -212,7 +214,7 @@
       </section>
 
       <!--Section 3-->
-      <section class="section-three">
+      <section class="section-three hidden" class="hidden">
         <div class="container">
           <h2 class="title-section">Our Team</h2>
 
@@ -394,7 +396,7 @@
       </section>
 
       <!--Section 4-->
-      <section class="section-four">
+      <section class="section-four hidden" class="hidden">
         <div class="container">
           <h2 class="title-section">Our Portfolio</h2>
 
@@ -608,9 +610,9 @@
     </footer>
 
     <!--Modal dialog window-->
-    <div class="modal-window-container hidden">
+    <div class="modal-window-container hidden" data-modal>
       <div class="modal-window">
-        <button type="button" class="button-close">
+        <button type="button" class="button-close" data-modal-close>
           <svg width="8" height="8" class="modal-close-icon">
             <use href="./images/icons.svg#icon-close-black" />
           </svg>

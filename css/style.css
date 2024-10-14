@@ -83,7 +83,7 @@ button {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .section-three .container,
@@ -427,7 +427,63 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/People-office.jpg);
+    url(../images/hero-images/hero-image@1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/hero-image@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/hero-image-tablet@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/hero-image-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/hero-image-pc@1x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/hero-image-pc@2x.jpg);
+  }
 }
 
 .section-one .container {
@@ -491,7 +547,7 @@ button {
     color: #fff;
 
     max-width: 496px;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
   }
 }
 
@@ -503,6 +559,10 @@ button {
 
   .section-one .container {
     max-width: 1158px;
+  }
+
+  .name-page {
+    margin-bottom: 48px;
   }
 }
 
@@ -627,6 +687,7 @@ button {
 
 .employe-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 72px;
 }
@@ -721,6 +782,8 @@ button {
   width: 100% - 32px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .image-container {
@@ -766,9 +829,6 @@ button {
 
   .card {
     width: calc((100% - 24px) / 2);
-
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
 }
 
@@ -780,6 +840,7 @@ button {
 
   .card {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
   }
 
   .card-hover-text {
@@ -904,7 +965,7 @@ footer .container {
   border-radius: 4px;
   background-color: transparent;
 
-  width: 264px;
+  width: 288px;
   height: 40px;
 
   font-size: 12px;
@@ -982,6 +1043,10 @@ footer .container {
     justify-content: flex-start;
   }
 
+  .subscribe-input {
+    width: 264px;
+  }
+
   .footer-form {
     gap: 24px;
     flex-direction: row;
@@ -999,10 +1064,12 @@ footer .container {
 
   .first-footer-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .second-footer-container {
     margin-right: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -1197,3 +1264,5 @@ footer .container {
     min-height: 584px;
   }
 }
+
+/*Retina images*/
